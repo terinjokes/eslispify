@@ -1,0 +1,16 @@
+"use strict"
+(var eslisp (require "eslisp"))
+(var transformify (require "transformify"))
+
+(var eslisp-re (regex "\\.esl$" i))
+
+(function identity (source)
+	  (return source))
+
+(function eslispify(file options)
+	  (return (?: (!((. eslisp-re test) file))
+		      ((transformify identity) file)
+		      ((transformify (lambda (source)
+				      (return (eslisp source)))) file))))
+
+(= (. module exports) eslispify)

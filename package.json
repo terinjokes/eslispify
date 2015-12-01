@@ -1,0 +1,39 @@
+{
+  "name": "eslispify",
+  "description": "browserify transform to compile eslisp",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "mkdirp lib && eslc -t eslisp-camelify src/index.esl > lib/index.js",
+    "prepublish": "npm run build",
+    "test": "npm run build && mocha",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/terinjokes/eslispify.git"
+  },
+  "keywords": [
+    "browserify-transform"
+  ],
+  "author": "Terin Stock <terinjokes@gmail.com> (https://terinstock.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/terinjokes/eslispify/issues"
+  },
+  "homepage": "https://github.com/terinjokes/eslispify#readme",
+  "dependencies": {
+    "eslisp": "^0.7.1",
+    "eslisp-camelify": "^0.2.0",
+    "transformify": "^0.1.2"
+  },
+  "devDependencies": {
+    "assume": "^1.3.1",
+    "bl": "^1.0.0",
+    "mkdirp": "^0.5.1",
+    "mocha": "^2.3.4",
+    "semantic-release": "^4.3.5"
+  },
+  "files": [
+    "lib/"
+  ]
+}
