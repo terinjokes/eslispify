@@ -23,7 +23,7 @@
   "homepage": "https://github.com/terinjokes/eslispify#readme",
   "dependencies": {
     "eslisp": "^0.7.1",
-    "eslisp-camelify": "^0.2.0",
+    "eslisp-camelify": "^0.3.0",
     "transformify": "^0.1.2"
   },
   "devDependencies": {
