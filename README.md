@@ -1,5 +1,7 @@
 # eslispify [![Travis-CI Status](https://img.shields.io/travis/terinjokes/eslispify/master.svg?label=Travis%20CI&style=flat-square)](https://travis-ci.org/terinjokes/eslispify)  [![](https://img.shields.io/npm/dm/eslispify.svg?style=flat-square)](https://www.npmjs.org/package/eslispify) [![](https://img.shields.io/npm/v/eslispify.svg?style=flat-square)](https://www.npmjs.org/package/eslispify) 
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/terinjokes/eslispify.svg)](https://greenkeeper.io/)
+
 > browserify transform for [eslisp](https://www.npmjs.com/package/eslisp)
 
 ## Installation
